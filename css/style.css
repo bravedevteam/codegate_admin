@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import url("./common.css");
+
+.boxLogin { position:absolute; left:0; top:0; right:0; bottom:140px; display:flex; align-items:center; justify-content:center; text-align:center; z-index:10; }
+.boxLogin .inner { width:100%; max-height:100%; padding:30px 0; overflow:auto; }
+.boxLogin h1.logo { width:106px; height:117px; margin:0 auto 73px; background:url('../images/common/logo.png') center center no-repeat; font-size:0; text-indent:-99999px; }
+.boxLogin .title { margin-bottom:38px; font-size:24px; text-align:center; }
+.boxLogin .boxInput { width:336px; margin:0 auto; text-align:left; }
+.boxLogin .boxInput+.boxInput { margin-top:14px; }
+.boxLogin .btn { margin-top:55px; }
+.boxLogin .inner > .boxGuide { margin-top:30px; display:inline-block; vertical-align:middle; }
+
+.topArea { padding-top:34px; padding-bottom:34px; }
+.topArea .boxTab:after { content:''; display:block; clear:both; }
+.topArea .boxTab a { float:left; position:relative; font-size:24px; color:#d0d0d0; font-weight:700; }
+.topArea .boxTab a+a { margin-left:52px; }
+.topArea .boxTab a.active { color:#3c3c3c; }
+.topArea .boxTab a.active:after { content:''; width:22px; height:4px; position:absolute; left:50%; top:-8px; margin-left:-11px; background:url('../images/content/iconTopTab.png') no-repeat; }
+.topArea .boxSearch { position:absolute; right:48px; top:24px; overflow:hidden; }
+.topArea .boxSearch .boxInput { width:335px; float:left; }
+.topArea .boxSearch .boxInput input { padding-left:50px; background:url('../images/common/iconSearch.png') 15px center no-repeat; border-color:#707070; }
+.topArea .boxSearch button { width:130px; height:54px; float:left; margin-left:20px; }
+
+.btnDownload { width:170px; height:42px; border:1px solid #6552f6; border-radius:5px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); font-size:15px; font-weight:700; color:#6552f6; }
