@@ -12,13 +12,14 @@
 
 .topArea { padding-top:34px; padding-bottom:34px; }
 .topArea .boxTab:after { content:''; display:block; clear:both; }
-.topArea .boxTab a { float:left; position:relative; font-size:24px; color:#d0d0d0; font-weight:700; }
+.topArea .boxTab a { float:left; position:relative; font-size:24px; color:#d0d0d0; }
 .topArea .boxTab a+a { margin-left:52px; }
-.topArea .boxTab a.active { color:#3c3c3c; }
+.topArea .boxTab a.active { color:#3c3c3c; font-weight:700; }
 .topArea .boxTab a.active:after { content:''; width:22px; height:4px; position:absolute; left:50%; top:-8px; margin-left:-11px; background:url('../images/content/iconTopTab.png') no-repeat; }
-.topArea .boxSearch { position:absolute; right:48px; top:24px; overflow:hidden; }
-.topArea .boxSearch .boxInput { width:335px; float:left; }
-.topArea .boxSearch .boxInput input { padding-left:50px; background:url('../images/common/iconSearch.png') 15px center no-repeat; border-color:#707070; }
-.topArea .boxSearch button { width:130px; height:54px; float:left; margin-left:20px; }
+
+.boxSearch { overflow:hidden; }
+.boxSearch .boxInput { width:248px; float:left; }
+.boxSearch .boxInput input { height:40px; padding-left:38px; background:url('../images/common/iconSearch.png') 11px center no-repeat; background-size:16px auto; border-color:#707070; }
+.boxSearch button { width:95px; height:40px; float:left; margin-left:16px; font-size:15px; }
 
 .btnDownload { width:170px; height:42px; border:1px solid #6552f6; border-radius:5px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); font-size:15px; font-weight:700; color:#6552f6; }
