@@ -34,6 +34,7 @@
               <colgroup>
                 <col width="60" />
                 <col width="160" />
+                <col width="160" />
                 <col width="110" />
                 <col width="240" />
                 <col width="150" />
@@ -44,6 +45,7 @@
               <thead>
                 <tr>
                   <th>No.</th>
+                  <th>회원구분</th>
                   <th>이메일</th>
                   <th>성명</th>
                   <th>휴대폰번호</th>
@@ -56,7 +58,8 @@
               <tbody>
                 <tr>
                   <td>5</td>
-                  <td></td>
+                  <td>기업</td>
+                  <td><a href="#" class="open--popup" data-pop="detail">aaa@a.com</a></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -73,9 +76,11 @@
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td>3</td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -93,9 +98,11 @@
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td>1</td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -113,6 +120,13 @@
             </div>
             <div class="right">
               <div class="boxSearch">
+                <div class="boxSelect">
+                  <div class="select">검색조건</div>
+                  <ul>
+                    <li><a href="#">이메일</a></li>
+                    <li><a href="#">성명</a></li>
+                  </ul>
+                </div>
                 <div class="boxInput">
                   <input type="text" />
                 </div>
@@ -143,5 +157,92 @@
     </div>
 		<footer id="footer">ⓒHancom Codegate Inc., All rights reserved.</footer>
 	</section>
+
+  <div id="detail" class="popBasic">
+    <div class="box">
+      <h3 class="title">회원정보</h3>
+      <div class="row">
+        <div class="boxTable type--vertical input--confirm">
+          <table>
+            <colgroup>
+              <col width="200" />
+              <col width="840" />
+            </colgroup>
+            <tr>
+              <th>관리자 지정</th>
+              <td>
+                <input type="checkbox" id="chkAdmin" />
+                <label for="chkAdmin">관리자 지정</label>
+              </td>
+            </tr>
+            <tr>
+              <th>이메일</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="abc@abc.com" disabled="disabled">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>성명</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="홍길동" disabled="disabled">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>생년월일</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>휴대폰번호</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>사업자명</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>사업자등록번호</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>사업장 전화번호</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="btn">
+        <button type="button" class="btnBasic submit">저장</button>
+        <button type="button" class="btnBasic">삭제</button>
+        <button type="button" class="btnBasic">취소</button>
+      </div>
+      <button type="button" class="close">닫기</button>
+    </div>
+  </div>
+
+  <div id="dim"></div>
 </body>
 </html>

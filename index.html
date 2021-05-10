@@ -114,6 +114,14 @@
             </div>
             <div class="right">
               <div class="boxSearch">
+                <div class="boxSelect">
+                  <div class="select">검색조건</div>
+                  <ul>
+                    <li><a href="#">주문번호</a></li>
+                    <li><a href="#">신청자</a></li>
+                    <li><a href="#">상품명</a></li>
+                  </ul>
+                </div>
                 <div class="boxInput">
                   <input type="text" />
                 </div>
@@ -159,10 +167,6 @@
               <col width="320" />
             </colgroup>
             <tr>
-              <th>주문번호</th>
-              <td colspan="3">12345-67890</td>
-            </tr>
-            <tr>
               <th>신청자</th>
               <td>박명진</td>
               <th>사업자명</th>
@@ -180,21 +184,32 @@
               <th>사업장전화번호</th>
               <td>02-555-1234</td>
             </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <h5 class="title">코드 신청 정보</h5>
+        <div class="boxTable type--vertical input--confirm">
+          <table>
+            <colgroup>
+              <col width="200" />
+              <col width="320" />
+              <col width="200" />
+              <col width="320" />
+            </colgroup>
             <tr>
-              <th>상품구분</th>
-              <td>스토리형</td>
-              <th>수량</th>
-              <td>3</td>
+              <th>주문번호</th>
+              <td colspan="3">12345-67890</td>
+            </tr>
+            <tr>
+              <th>상품명</th>
+              <td colspan="3">큐빅 18K 반지</td>
             </tr>
             <tr>
               <th>브랜드</th>
               <td>골드플러스</td>
               <th>제조사</th>
               <td>금반지회사</td>
-            </tr>
-            <tr>
-              <th>상품명</th>
-              <td colspan="3">큐빅 18K 반지</td>
             </tr>
             <tr>
               <th>상품이미지</th>
@@ -210,11 +225,28 @@
                     <img src="./images/content/imgThumb.png" alt="" />
                   </div>
                 </div>
+                <div class="inputBasic type--file size--half">
+                  <input type="text" value="imgSkin.png">
+                  <button type="button">첨부</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Link URL</th>
+              <td colspan="3">
+                <div class="inputBasic">
+                  <input type="text" value="https://www.gode.com" />
+                </div>
               </td>
             </tr>
             <tr>
               <th>정품인증서</th>
-              <td colspan="3"></td>
+              <td colspan="3">
+                <div class="inputBasic type--file size--half">
+                  <input type="text" value="큐빅18K반지 인증서.pdf">
+                  <button type="button">첨부</button>
+                </div>
+              </td>
             </tr>
             <tr>
               <th>신청일</th>
@@ -222,7 +254,9 @@
             </tr>
             <tr>
               <th>추가신청내용</th>
-              <td colspan="3">코드 신청 세부 내용</td>
+              <td colspan="3">
+                <textarea></textarea>
+              </td>
             </tr>
           </table>
         </div>
@@ -233,11 +267,31 @@
           <table>
             <colgroup>
               <col width="200" />
-              <col width="840" />
+              <col width="320" />
+              <col width="200" />
+              <col width="320" />
             </colgroup>
             <tr>
-              <th>코드번호</th>
+              <th>코드 수량</th>
               <td>
+                <div class="inputBasic">
+                  <input type="text" value="2">
+                </div>
+              </td>
+              <th>상품 수량</th>
+              <td>
+                <div class="inputBasic">
+                  <input type="text" value="5">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>코드번호</th>
+              <td colspan="3">
+                <div class="inputBasic type--file size--half">
+                  <input type="text">
+                  <button type="button">코드발급</button>
+                </div>
                 <div class="inputBasic type--file size--half">
                   <input type="text">
                   <button type="button">코드발급</button>
@@ -246,7 +300,7 @@
             </tr>
             <tr>
               <th>진행상태</th>
-              <td>
+              <td colspan="3">
                 <input type="radio" id="chk_status1" name="chk_status">
                 <label for="chk_status1">신청완료</label>
                 <input type="radio" id="chk_status2" name="chk_status">
@@ -257,7 +311,7 @@
             </tr>
             <tr>
               <th>비고</th>
-              <td>
+              <td colspan="3">
                 <div class="inputBasic"><input type="text" placeholder="간략한 내용 메모"></div>
               </td>
             </tr>

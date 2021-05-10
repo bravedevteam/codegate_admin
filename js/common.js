@@ -1,8 +1,20 @@
 $(function(){
+  $(".boxSelect .select").click(function(){
+    $(this).next("ul").toggleClass("active");
+  });
+
+  $(".boxSelect ul li a").click(function(){
+    var val = $(this).html();
+
+    $(this).parents("ul").find("li").removeClass("active");
+    $(this).parent().addClass("active");
+    $(this).parents(".boxSelect").children(".select").html(val);
+    $(this).parents("ul").removeClass("active");
+  });
+
+
 	$(".open--popup").click(function(){
     var target = $(this).attr("data-pop");
-
-    
 
     $("#"+target).fadeIn(300);
     dimOpen()
