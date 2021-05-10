@@ -12,6 +12,15 @@ $(function(){
     $(this).parents("ul").removeClass("active");
   });
 
+  $(".popBasic").click(function(event){
+    var target = $(event.target);
+    
+    if(target.is(".popBasic")){
+      $(this).fadeOut(300);
+      dimClose();
+    }
+  });
+
 
 	$(".open--popup").click(function(){
     var target = $(this).attr("data-pop");
