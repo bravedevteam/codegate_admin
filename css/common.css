@@ -123,8 +123,7 @@ input[type="radio"]:checked+label:after { content:''; width:10px; height:10px; p
 .boxGuide.type--imp { padding-left:16px; color:#6552f6; }
 .boxGuide.type--imp:before { content:'※'; position:absolute; left:0; top:0; }
 
-.boxTable { border:1px solid #eaeaea; border-radius:5px; overflow:hidden; }
-.boxTable table { width:100%; border:0; }
+.boxTable table { width:100%; border:1px solid #eaeaea; }
 .boxTable table th { height:65px; background:#f8f8f8; border-bottom:1px solid #eaeaea; font-size:13px; }
 .boxTable table td { height:62px; border-bottom:1px solid #eaeaea; text-align:center; }
 .boxTable table th+th,

@@ -3,12 +3,14 @@
 
 .boxLogin { position:absolute; left:0; top:0; right:0; bottom:140px; display:flex; align-items:center; justify-content:center; text-align:center; z-index:10; }
 .boxLogin .inner { width:100%; max-height:100%; padding:30px 0; overflow:auto; }
+.boxLogin .inner .boxGuide { margin-top:30px; display:inline-block; vertical-align:middle; }
 .boxLogin h1.logo { width:106px; height:117px; margin:0 auto 73px; background:url('../images/common/logo.png') center center no-repeat; font-size:0; text-indent:-99999px; }
 .boxLogin .title { margin-bottom:38px; font-size:24px; text-align:center; }
 .boxLogin .boxInput { width:336px; margin:0 auto; text-align:left; }
+.boxLogin .boxInput .boxGuide { margin-top:3px; display:block; }
 .boxLogin .boxInput+.boxInput { margin-top:14px; }
 .boxLogin .btn { margin-top:55px; }
-.boxLogin .inner > .boxGuide { margin-top:30px; display:inline-block; vertical-align:middle; }
+
 
 .topArea { padding-top:34px; padding-bottom:34px; }
 .topArea .boxTab:after { content:''; display:block; clear:both; }
